@@ -1,2 +1,2 @@
-#Dotfiles for my arch setup
+#### Dotfiles for my arch setup
 

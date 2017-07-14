@@ -1,0 +1,2 @@
+#
+kill $(pidof polybar) & polybar bar &

@@ -184,7 +184,7 @@ format-padding = 2
 
 [module/network]
 type = internal/network
-interface = wlp14s0
+interface = wlp65s0
 
 ; Seconds to sleep between updates
 ; Default: 1
@@ -194,7 +194,7 @@ interval = 3.0
 ; A value of 0 disables the feature
 ; NOTE: Experimental (needs more testing)
 ; Default: 0
-;ping-interval = 3
+ping-interval = 3
 
 ; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
 ; Minimum output width of upload/download rate

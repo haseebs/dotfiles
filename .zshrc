@@ -261,3 +261,6 @@ PROMPT='%{%f%b%k%}$(build_prompt) '
 
 zstyle ':completion:*' menu select
 clear
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"

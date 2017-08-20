@@ -49,6 +49,9 @@ alias rm='rm -iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
 
+### SSH
+alias tukl='ssh talhaparacha@10.3.17.39'
+
 ### prevents accidentally clobbering files
 alias mkdir='mkdir -p'
 
@@ -67,7 +70,7 @@ alias ytds='youtube-dl --write-sub --embed-subs'
 
 ### python env aliases
 alias tensorflow='source ~/tensorflow/bin/activate'
-
+alias tfcpu='source ~/tfCPU/bin/activate'
 ### git
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 #-------------------------------------------------------------

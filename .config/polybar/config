@@ -130,7 +130,8 @@ ws-icon-default = 
 [module/date]
 type = internal/date
 #date-alt =   %A %H:%M 
-date = %{F#928374}%{F-} %H:%M
+date = %{F#928374}%{F-} %I:%M %p
+#%H:%M
 interval = 5
 format-underline = ${colors.white}
 ;format-background = ${colors.black}
@@ -217,13 +218,13 @@ format-connected = %{F#928374} %{F-}<label-connected>
 
 ; Available tags:
 ;   <label-disconnected> (default)
-format-disconnected = <label-disconnected>
+format-disconnected = <label-disconnected> 
 
 ; Available tags:
 ;   <label-connected> (default)
 ;   <label-packetloss>
 ;   <animation-packetloss>
-format-packetloss = <animation-packetloss> <label-connected>
+format-packetloss = <animation-packetloss> <label-packetloss>
 
 ; Available tokens:
 ;   %ifname%    [wireless+wired]
@@ -234,7 +235,7 @@ format-packetloss = <animation-packetloss> <label-connected>
 ;   %downspeed% [wireless+wired]
 ;   %linkspeed% [wired]
 ; Default: %ifname% %local_ip%
-label-connected = %signal:3%%
+label-connected = %essid%%signal:3%%  %{F#4e4e4e}| %{F#928374}  %{F-}%downspeed%
 
 ; Available tokens:
 ;   %ifname%    [wireless+wired]

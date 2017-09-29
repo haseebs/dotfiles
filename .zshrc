@@ -8,6 +8,10 @@ export MAKEFLAGS="$MAKEFLAGS -j$(($(nproc)))"
 ### browser
 export BROWSER=firefox
 
+#export BSPWM_SOCKET=/tmp/bspwm_socket
+
+### cudnn path
+export LD_LIBRARY_PATH=/opt/cuda/lib64
 #-------------------------------------------------------------
 # aliases
 #-------------------------------------------------------------
@@ -74,8 +78,14 @@ alias ytds='youtube-dl --write-sub --embed-subs'
 ### python env aliases
 alias tensorflow='source ~/tensorflow/bin/activate'
 alias tfcpu='source ~/tfCPU/bin/activate'
+alias tfgpu='source ~/tfgpu/bin/activate'
 ### git
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
+
+### python execution and debug
+alias wtf=python -m pdb -c continue
+alias iwtf=ipython --pdb
+
 #-------------------------------------------------------------
 # zsh options
 #-------------------------------------------------------------

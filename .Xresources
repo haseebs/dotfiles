@@ -9,7 +9,7 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! font
-URxvt*font: xft:Iosevka Term:style=Medium:size=12
+URxvt*font: xft:Iosevka Term:style=Bold:size=12
 ! terminal padding
 URxvt.internalBorder: 25
 
@@ -20,7 +20,7 @@ URxvt.internalBorder: 25
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
 Xft.hintstyle:  hintfull
-Xft.hinting: 1
+Xft.hinting: 0
 Xft.antialias: 1
 Xft.rgba: rgb
 
@@ -97,11 +97,11 @@ URxvt.matcher.rend.0: Uline Bold fg5
 *.color250: #d5c4a1
 
 ! rofi
-rofi.modi: run
+rofi.modi: combi
 !rofi.font: Sauce Code Pro
 ! terminal padding
-rofi.width: 20
-rofi.lines: 8
+rofi.width: 30
+rofi.lines: 10
 rofi.columns: 1
 !                    bg       fg      altbg    hlbg     hlfg
 rofi.color-normal: #262626, #ebdbb2, #262626, #ebdbb2, #262626

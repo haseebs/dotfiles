@@ -79,6 +79,9 @@ alias ytds='youtube-dl --write-sub --embed-subs'
 alias tensorflow='source ~/tensorflow/bin/activate'
 alias tfcpu='source ~/tfCPU/bin/activate'
 alias tfgpu='source ~/tfgpu/bin/activate'
+alias tfgpuold='source ~/tfgpuold/bin/activate'
+alias grapi='source ~/grapi/bin/activate'
+alias icarl='source ~/icarl/bin/activate'
 ### git
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 
@@ -86,6 +89,11 @@ alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 alias wtf=python -m pdb -c continue
 alias iwtf=ipython --pdb
 
+### for ranger img previews
+alias w3mimgpreview='w3m'
+
+### wunderline
+alias wnd=wunderline
 #-------------------------------------------------------------
 # zsh options
 #-------------------------------------------------------------
@@ -94,8 +102,8 @@ alias iwtf=ipython --pdb
 #bindkey -v
 
 ### syntax highlighting
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
 ### completions
 autoload -Uz compinit && compinit

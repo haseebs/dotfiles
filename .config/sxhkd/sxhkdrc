@@ -21,7 +21,7 @@ super + button{4,5}
 
 # program launcher
 super + space
-	rofi -show run
+	rofi -show combi
 
 # web browser
 super + F

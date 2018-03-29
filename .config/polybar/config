@@ -189,13 +189,13 @@ interface = wlp65s0
 
 ; Seconds to sleep between updates
 ; Default: 1
-interval = 3.0
+interval = 1.0
 
 ; Test connectivity every Nth update
 ; A value of 0 disables the feature
 ; NOTE: Experimental (needs more testing)
 ; Default: 0
-ping-interval = 3
+ping-interval = 0.01
 
 ; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
 ; Minimum output width of upload/download rate

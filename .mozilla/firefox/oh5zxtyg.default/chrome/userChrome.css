@@ -1,0 +1,141 @@
+:root /* colours */
+{
+    --topBar-col: #303030;
+    --persBar-col: #303030;
+    --sideBar-backgrnd-col: #E8E8E8;
+    --sideBar-borders-col: #101010;
+    --urlBar-col: #505050;
+    --button-hover: #505060;
+    --button-active: #607080;
+    --text-col: #FFFFFF;
+    --tst-icon-loc-16: url("moz-extension://.../resources/16x16-dark.svg");
+    --tst-icon-loc-24: url("moz-extension://.../resources/24x24-dark.svg");
+}
+/* Remove Back button when there's nothing to go Back to */
+#back-button { display: none; }
+
+/* Remove Forward button when there's nothing to go Forward to */
+#forward-button { display: none; }
+
+#PanelUI-menu-button { padding-right: 15px !important; }
+
+/* Adjust Colors */
+.tab-background:not([selected=true]),
+.tab-background[selected="true"],
+#titlebar-buttonbox,
+#TabsToolbar,
+#PersonalToolbar,
+#urlbar,
+#nav-bar {
+  background: #303030 !important;
+}
+
+/* No Black Line */
+#navigator-toolbox{
+  margin-top: -1px !important;
+}
+ 
+/* Height */
+#nav-bar {
+  min-height: 40px !important;
+  z-index: 3;
+  box-shadow: none !important;
+}
+#urlbar {
+  margin-left: 85px !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: 30px !important;
+}
+ 
+/* Clean Up */
+.urlbar-icon,
+.tab-close-button.tab-close-button,
+#page-action-buttons,
+#identity-box {
+  display: none;
+}
+#urlbar .urlbar-input-box {
+    text-align: center;
+}
+.urlbar-input-box > .urlbar-input::placeholder {
+  opacity: 0 !important;
+}
+ 
+/* Autohide Tabs */
+#TabsToolbar {
+  min-height: 40px !important;
+  margin-top: -40px !important;
+  transition: all 0.3s ease 0s !important;
+    -moz-box-ordinal-group: 2 !important;
+}
+#navigator-toolbox {
+  transition: all 0.3s ease 0s !important;
+}
+
+ 
+/* Remove Tab Borders */
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+   border-left: none !important;
+}
+:root {
+  --tabs-border: transparent !important;
+}
+
+/* Client Side Decorations */
+#titlebar-buttonbox {
+  height: 40px !important;
+}
+#nav-bar {
+  margin-right: -10px;
+  box-shadow: none !important;
+}
+#titlebar-buttonbox {
+  z-index: 3 !important;
+}
+.titlebar-placeholder {
+  display:none !important;
+}
+/* side bar maelstrom */
+
+/* main sidebar */
+#sidebar
+{
+    background-color: var(--sideBar-backgrnd-col) !important;
+    margin-top: -30px;
+    border-left: var(--sideBar-borders-col) solid 1px;
+    min-width: 169px !important;
+    max-width: 800px !important;
+}
+#sidebar-header /* pretending to be a personal bar icon */
+{
+    background-color: var(--persBar-col);
+    color: var(--text-col);
+    margin-left: -32px !important;
+    padding: 0px !important;
+    border: none !important;
+}
+#sidebar-switcher-target /* recolour TST icon */
+{
+    --webextension-menuitem-image: var(--tst-icon-loc-16) !important;
+    --webextension-menuitem-image-2x: var(--tst-icon-loc-24) !important;
+}
+#sidebar-switcher-target :not(#sidebar-icon), #sidebar-close { display: none; } /* hide sidebar switcher things except icon */
+#sidebar-switcher-target
+{
+    margin-top: 2px !important;
+    margin-left: 2px !important;
+    padding: 5px !important;
+    border-radius: 2px !important;
+}
+#sidebar-switcher-target:hover { background-color: var(--button-hover) !important; border-color: var(--button-hover) !important; }
+#sidebar-switcher-target.active { background-color: var(--button-active) !important; border-color: var(--button-active) !important; }
+
+/* popup menus */
+/* sidebar menu */
+#sidebarMenu-popup > *:nth-child(4), #sidebarMenu-popup > *:nth-child(n+6), #sidebarMenu-popup toolbarbutton[checked] { display: none !important; }
+#sidebarMenu-popup > *:nth-child(5) { -moz-box-ordinal-group: 0 !important; }
+
+#TabsToolbar {
+    visibility: collapse !important;
+}

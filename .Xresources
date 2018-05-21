@@ -97,7 +97,7 @@ URxvt.matcher.rend.0: Uline Bold fg5
 *.color250: #d5c4a1
 
 ! rofi
-rofi.modi: combi
+rofi.modi: run
 !rofi.font: Sauce Code Pro
 ! terminal padding
 rofi.width: 30

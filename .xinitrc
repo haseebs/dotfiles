@@ -5,7 +5,8 @@
 export QT_STYLE_OVERRIDE=GTK+
 
 # set background
-feh --randomize --recursive --bg-fill ~/.wallpaper &
+#feh --randomize --recursive --bg-fill ~/.wallpaper &
+feh --bg-scale 'file:///home/haseebs/pictures/2018-05-04-232044_1920x1080_scrot.png'
 #fehbg &
 
 # compositor

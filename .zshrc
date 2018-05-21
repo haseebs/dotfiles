@@ -82,6 +82,9 @@ alias tfgpu='source ~/tfgpu/bin/activate'
 alias tfgpuold='source ~/tfgpuold/bin/activate'
 alias grapi='source ~/grapi/bin/activate'
 alias icarl='source ~/icarl/bin/activate'
+alias retro='source ~/retro/bin/activate'
+alias pushlogger='source ~/pushlogger/bin/activate'
+
 ### git
 alias dots='git --git-dir=$HOME/.dots.git/ --work-tree=$HOME'
 
